@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: #4CAF50;
+            color: #ffffff;
+            padding: 18px;
+            text-align: center;
+        }
+        .header img {
+            max-width: 150px;
+            height: auto;
+        }
+        .content {
+            padding: 20px;
+        }
+        .message {
+            padding: 12px;
+            border-left: 4px solid #d0d0d0;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background: #4CAF50;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            font-weight:bold;
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                margin: 10px;
+            }
+            .header img {
+                max-width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i.snapcdn.app/photo?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJodHRwczovL3Njb250ZW50LWZyYTMtMS5jZG5pbnN0YWdyYW0uY29tL3YvdDUxLjI4ODUtMTkvNDU1OTU0NzM4XzEyNzI1NTAwMTA3ODU3MjRfNTc4MTU2NzMyMDM2MDk5NTA0OF9uLmpwZz9fbmNfaHQ9c2NvbnRlbnQtZnJhMy0xLmNkbmluc3RhZ3JhbS5jb20mX25jX2NhdD0xMDgmX25jX29oYz1lSVNERm5hQV9XY1E3a052Z0VhYUZqMiZlZG09QUNXRHFiOEJBQUFBJmNjYj03LTUmb2g9MDBfQVlDb0FlXzl4NlFvVXJqZnJuMUFkUDBXMmF6Nlc1TGJmdmN4TS1KY3NtSGJTdyZvZT02NkQ4NjA1QSZfbmNfc2lkPWVlOTg3OSIsImZpbGVuYW1lIjoiU2F2ZUluc3RhLkFwcF80NTU5NTQ3MzhfMTI3MjU1MDAxMDc4NTcyNF81NzgxNTY3MzIwMzYwOTk1MDQ4X24uanBnIiwibmJmIjoxNzI1MDc5MjQxLCJleHAiOjE3MjUwODI4NDEsImlhdCI6MTcyNTA3OTI0MX0.UOrrObGbq9EvlZ0SYJr4kCLZ0LBXj2KfFwLwevKK2J8" height="100px" width="100px" style="border-radius:50%" alt="GFGSC-RGUKTN">
+            <h2>New Message Received</h2>
+        </div>
+        <div class="content">
+            <p>Hello Team,</p>
+            <p>You have received a new message from <b>{{from_name}}. </b> </p>
+<p><strong>Email:</strong> {{from_email}}</p>
+            <p><strong>Subject:</strong> {{subject}}</p>
+            <p class="message">
+                {{message}}
+            </p>
+        </div>
+        <div class="footer">
+            <p>Best wishes<br>Web Team,<br>GFGSC-RGUKTN</p>
+        </div>
+    </div>
+</body>
+</html>
